@@ -1,0 +1,12 @@
+function findMax(arr) {
+  let max = arr[0].number;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i].number > max) {
+      max = arr[i].number;
+    }
+  }
+  return max;
+}
+
+let numbers = [{ number: 5 }, { number: 2 }, { number: 9 }, { number: 1 }, { number: 7 }];
+console.log(findMax(numbers));
